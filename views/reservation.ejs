@@ -1,0 +1,105 @@
+<% layout('layouts/boilerplate') %>
+
+    <div class="container-fluid p-4" id="readyTo">
+        <div class="col d-flex justify-content-center">
+            <div class="card border-0 bg-transparent w-75 text-white">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Reservations</h5>
+                    <p class="card-text">We can't wait to host you. If you have any special requirements please feel
+                        free to
+                        call on the phone number below. We'll be happy to accommodate you.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col d-flex justify-content-end">
+            <div class="card bg-light w-50">
+                <div class="card-body">
+                    <form action="/send" method="POST">
+                        <div class="form-floating mb-3">
+                            <input name="name" type="text" class="form-control" id="floatingInput" placeholder="Name">
+                            <label for="floatingInput">Name</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input name="email" type="email" class="form-control" id="floatingInput"
+                                placeholder="name@example.com">
+                            <label for="floatingInput">Email address</label>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-auto">
+                                <label for="date" class="col-form-label">Pick a date</label>
+                            </div>
+                            <div class="col">
+                                <input name="date" type="date" id="date" class="form-control">
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-auto">
+                                <label for="time" class="col-form-label">Pick a time</label>
+                            </div>
+                            <div class="col">
+                                <input name="time" type="time" id="time" class="form-control">
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <select name="numberOfPeople" class="form-select">
+                                <option value="1">1 person</option>
+                                <option value="2">2 people</option>
+                                <option value="3">3 people</option>
+                                <option value="4">4 people</option>
+                            </select>
+                        </div>
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">MAKE A RESERVATION</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Thank you!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>A confirmation letter has been sent to your email. Chcek your inbox.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- 
+    <div>
+        <form action="/send" method="POST">
+            <div>
+                <label for="name">Name</label>
+                <input type="text" id="nema" name="name">
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email">
+            </div>
+            <div>
+                <label for="date">Pick a date</label>
+                <input type="date" id="date" name="date">
+            </div>
+            <div>
+                <label for="time">Pick a time</label>
+                <input type="time" id="time" name="time">
+            </div>
+            <div>
+                <select name="numberOfPeople">
+                    <option value="1">1 person</option>
+                    <option value="2">2 people</option>
+                    <option value="3">3 people</option>
+                    <option value="4">4 people</option>
+                </select>
+            </div>
+            <button type="submit">MAKE A RESERVATION</button>
+        </form>
+    </div>
+
+    -->

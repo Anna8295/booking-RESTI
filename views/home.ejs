@@ -1,0 +1,150 @@
+<% layout('layouts/boilerplate') %>
+    <!-- header --->
+    <div class="card text-center border-0 bg-dark text-white">
+        <div class="row">
+            <div class="col-sm-12 col-lg-6 order-lg-last">
+                <img src="public/image/header.jpg" class="card-img-top" alt="...">
+            </div>
+            <div class="col-sm-12 col-lg-6 order-lg-first d-lg-flex align-items-center">
+                <div class="card-body">
+                    <h5 class="card-title">Exquisite dinig since 1989</h5>
+                    <p class="card-text">Experience our seasonal menu in beautiful country surroundings. Eat the
+                        freshest
+                        product from the comfort of our farmhouse.</p>
+                    <a href="reservation" class="btn btn-outline-light">Book a table</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end of header --->
+    <!-- about us --->
+    <div class="container-fluid bg-light p-4">
+        <div class="card mb-3 border-0 bg-transparent">
+            <div class="row d-flex">
+                <div class="col-sm-12 col-lg-4">
+                    <img src="public/image/nature_md,sm.jpg" class="rounded mx-auto d-block" alt="...">
+                </div>
+                <div class="col-sm-12 col-lg-8">
+                    <div class="card-body text-center text-lg-start">
+                        <h5 class="card-title">Enjoyable place for all the family</h5>
+                        <p class="card-text">Our relaxed surroundings make dinig with us a great experience for
+                            everyone. We can even arrange a tour of the farm before your meal.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card mb-3 border-0 bg-transparent">
+            <div class="row d-flex">
+                <div class="col-sm-12 col-lg-4 order-lg-last">
+                    <img src="public/image/chef_md,sm.jpg" class="rounded mx-auto d-block" alt="...">
+                </div>
+                <div class="col-sm-12 col-lg-8 order-lg-first">
+                    <div class="card-body text-center text-lg-start">
+                        <h5 class="card-title">The most locally sourced food</h5>
+                        <p class="card-text">All our ingredients come directly from our farm or local fishery. So you
+                            can be sure that you're eating the freshest, most sustainable food.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end of about us --->
+    <!-- menu --->
+    <div class="container-fluid bg-dark d-lg-flex p-4">
+        <div class="col-lg-6">
+            <div class="card border-0 text-center text-lg-start bg-transparent text-white mb-3">
+                <div class="card-body">
+                    <h5 class="card-title">A few highlights from ur menu</h5>
+                    <p class="card-text">We cater for all dietary requirements, but here's a glimpse at some of
+                        our
+                        diner's favourites. Our menu is revamped every season.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <div class="card border-0 border-top text-center text-md-start bg-transparent text-white mb-3">
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="public/image/pasta.jpg" class="img-fluid m-4" alt="pasta">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Pasta</h5>
+                            <p class="card-text">Our locally sourced salmon served with a home made pasta.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card border-0 border-top text-center text-md-start bg-transparent text-white mb-3">
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="public/image/desert.jpg" class="img-fluid m-4" alt="dessert">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Yogurt bowl</h5>
+                            <p class="card-text">Creamy yogurt combined with summer fruits and chocolate shavings</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card border-0 border-top text-center text-md-start bg-transparent text-white mb-3">
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="public/image/drink.jpg" class="img-fluid m-4" alt="cocktail">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Summer cocktail</h5>
+                            <p class="card-text">The drink that screams summer. It’s beautiful and vibrant, with colors
+                                of a
+                                summer
+                                sunset.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end of menu --->
+    <!-- events --->
+    <div class="container-fluid bg-light p-4 d-lg-flex">
+        <div class="col-lg-6 my-3">
+            <img src="public/image/familycat.jpg" id="myImage" class="img-fluid" alt="...">
+        </div>
+        <div class="col-lg-6 d-lg-flex flex-column">
+            <div class="order-lg-last my-3 d-grid gap-2 col-6 mx-auto d-md-flex d-lg-grid">
+                <button type="button" class="btn btn-outline-dark" onclick="family()">Family Gathering</button>
+                <button type="button" class="btn btn-outline-dark" onclick="special()">Special Events</button>
+                <button type="button" class="btn btn-outline-dark" onclick="social()">Social Events</button>
+            </div>
+            <div class="order-lg-first my-3">
+                <div class="card text-center border-0 text-lg-start bg-transparent mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title" id="message">Family Gathering</h5>
+                        <p class="card-text">We love catering for entire families. So please bring everyone along for a
+                            special
+                            meal with your loved ones. We'll provide a memorable experience for all.</p>
+                        <a href="reservation" class="btn btn-dark">Book a table</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end of events --->
+    <!-- banner reservation --->
+    <div class="card text-center" id="readyTo">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-sm-12 col-lg-6">
+                    <h5 class="card-title text-white">Ready to make a reservation?</h5>
+                </div>
+                <div class="col-sm-12 col-lg-6">
+                    <a href="reservation" class="btn btn-outline-light">Book a table</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end of banner reservation --->
